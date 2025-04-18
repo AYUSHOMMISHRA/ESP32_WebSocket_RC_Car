@@ -1,3 +1,4 @@
+const char *HTML_CONTENT = R"=====(
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -928,3 +929,4 @@
   </script>
 </body>
 </html>
+)=====";
