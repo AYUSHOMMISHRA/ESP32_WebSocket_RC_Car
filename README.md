@@ -1,6 +1,6 @@
 # 🚗 ESP32 WiFi RC Car Controller
 
-![Dashboard](https://raw.githubusercontent.com/ayushommishra/ESP32_WebSocket_RC_Car/main/Dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/Sensor-Driven-Automation/ESP32_WebSocket_RC_Car/main/Dashboard.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Arduino](https://img.shields.io/badge/Arduino-ESP32-green.svg)](https://www.arduino.cc/)
