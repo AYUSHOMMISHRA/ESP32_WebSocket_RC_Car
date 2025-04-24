@@ -34,9 +34,9 @@
 
 ## Copy the code below, paste it into the console, and press Enter:
 
+```
 // Create a WebSocket connection to the camera
-
-const cameraWS = new WebSocket("ws://<YOUR_CAMERA_IP>:82"); // <-- Replace <YOUR_CAMERA_IP> with your camera's IP address
+const cameraWS = new WebSocket("ws://<YOUR_CAMERA_IP>:82"); // <-- Replace IP
 console.log("Connecting to camera WebSocket...");
 
 // Set up the image element 
@@ -57,7 +57,7 @@ cameraWS.onopen = () => console.log("Camera WebSocket connected!");
 cameraWS.onerror = (e) => console.error("Camera WebSocket error:", e);
 cameraWS.onclose = () => console.log("Camera WebSocket disconnected");
 
-// Modify the interface's camera control functions to use our WS connection
+// Modify the interface's camera control functions
 window.startVideoStreamOriginal = window.startVideoStream;
 window.startVideoStream = function() {
   if (cameraWS.readyState !== WebSocket.OPEN) {
@@ -68,3 +68,6 @@ window.startVideoStream = function() {
   document.getElementById('camera-toggle').innerHTML = '<i class="fas fa-pause"></i><span>Pause Feed</span>';
   document.getElementById('camera-toggle').disabled = false;
 };
+```
+
+
